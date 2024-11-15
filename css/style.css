@@ -1,1 +1,21 @@
 @charset "utf-8";
+.wrap {
+    width: 1000px;
+    margin: 0 auto;
+    background-color: lightgoldenrodyellow
+}
+
+.brand {
+    width: 600px;
+    margin: 0 auto;
+}
+/* 사진,영상등의 큰 덩어리를 가로 가운데 옮기기 */
+.new {
+    width: 606px;
+    margin: 0 auto
+}
+
+/* 제목,내용 텍스트를 가로 가운데 옮기기 */
+.title {
+    text-align: center
+}
