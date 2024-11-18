@@ -1,8 +1,10 @@
 @charset "utf-8";
+html {
+    font-size: 20px
+}
 .wrap {
     width: 1000px;
     margin: 0 auto;
-    background-color: lightgoldenrodyellow
 }
 
 .brand {
@@ -17,5 +19,83 @@
 
 /* 제목,내용 텍스트를 가로 가운데 옮기기 */
 .title {
+    text-align: center;
+}
+
+.bi {
+    text-align: center;
+}
+
+.nav {
     text-align: center
+}
+
+.brand_text {
+    text-align: center;
+    width: 400px;
+    border: 2px solid #333; /* 테두리 선 */
+    margin: 30px auto;
+    padding: 15px;
+    font-size: 20px;
+    text-transform: uppercase; /* 텍스트-변형: */
+}
+
+#footer {
+    text-align: center
+}
+
+.copyright {
+    background-color:black;
+    color: white;
+    padding: 30px 0; /* 상하30, 좌우0 */
+}
+
+
+/* Media Query : 미디어 쿼리 */
+@media screen and (max-width: 412px) {
+    body {
+        color: white
+    }
+    img,
+    picture,
+    video {
+      max-width: 100%;
+    } 
+    .wrap {
+        width: 100%;
+    } 
+    .nav {
+        display: grid;
+        grid-template-rows: 50px 50px;
+        grid-template-columns: 1fr 1fr;
+        gap: 1px;
+        width: 100%;
+        text-transform: uppercase
+    }  
+    .nav a {
+        background: #2D380E;
+        color: white
+    }
+    .nav a:hover { /* 마우스 오버시 변경되는 색상 */
+        background: #BFFF00;
+        color: white
+    }
+    .brand {
+        width: 100%;
+    }
+    .new {
+        width: 100%;
+        text-align: center
+    }
+    .title {
+        color: black;
+        text-transform: capitalize;
+    }
+    .brand_text {
+        width: 300px;
+        color: black
+    }
+    #footer {
+        color: black
+    }
 }
